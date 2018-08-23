@@ -26,15 +26,18 @@ function calcular() {
     alert("delatT = " + ope + "s");
 
   }
-  else if(ace > 0 && delT > 0 && delV == 0){
+  else if(ace != 0 && delT > 0 && delV == 0){
             
     var oper = ace * delT;
     alert("deltaV = " + oper + "m/s");
   }
   else if (delV > 0 && delT > 0 && ace == 0) {
 
-  	var opera = delV / delatT;
+  	var opera = delV / delT;
   	alert("a = " + opera + "m/s²");
+  }
+  else{
+    alert("Operacao inavlida");
   }
   
        
